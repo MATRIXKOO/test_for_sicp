@@ -9,3 +9,5 @@
          ((and (>= a b) (>= c b)) (sumsquares a c)))) 
 (sqsumlargest 1 2 3)
 (sqsumlargest 2 3 4)
+
+
