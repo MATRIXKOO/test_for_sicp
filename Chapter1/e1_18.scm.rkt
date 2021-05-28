@@ -1,3 +1,5 @@
+#lang sicp
+
 (define (double n)(* n 2))
 (define (halve n)(/ n 2))
 (define (fast_mul b n)

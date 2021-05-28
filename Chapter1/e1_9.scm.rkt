@@ -1,8 +1,11 @@
+#lang sicp
+
+
 (define ( inc x)(+ x 1))
 (define (dec x)(- x 1))
 
 (define (add1 a b)
-(if (= a 0) b (inc (add1 (dec a) b))))
+  (if (= a 0) b (inc (add1 (dec a) b))))
 
 (+ 4 5)
 (inc (+ (dec 4) 5))
@@ -20,7 +23,7 @@
 ;  recursive 
 
 (define (add2 a b)
-(if (= a 0) b (add2 (dec a) (inc b))))
+  (if (= a 0) b (add2 (dec a) (inc b))))
 
 (+ 4 5)
 (+ (dec 4) (inc 5))

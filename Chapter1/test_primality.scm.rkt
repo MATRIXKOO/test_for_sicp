@@ -1,3 +1,5 @@
+#lang sicp
+
 (define (smallest_divisor n) (find_divisor n 2))
 
 (define (is_divides a b) (= (remainder b a) 0))
