@@ -1,3 +1,5 @@
+#lang sicp
+
 ;recusive
 (define (pascal row col)
   (cond

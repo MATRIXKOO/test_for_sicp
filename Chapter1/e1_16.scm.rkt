@@ -1,3 +1,7 @@
+#lang sicp
+
+(define (square x) (* x x)) 
+
 (define (fast-expt-iter p n a)
     (cond
         ((= n 0) a)

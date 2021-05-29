@@ -1,3 +1,5 @@
+#lang sicp
+
 ;; ex 1.23 
   
  (define (square x) (* x x)) 

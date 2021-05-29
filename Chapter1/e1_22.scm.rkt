@@ -27,8 +27,9 @@
 (define (report-prime n elapsed-time) 
   (newline) 
   (display n) 
-  (display " *** ") 
-  (display elapsed-time)) 
+  (display " time: ") 
+  (display elapsed-time)
+  (display " ms: ")) 
 
 (define (search-for-primes lower upper) 
   (define (iter n) 

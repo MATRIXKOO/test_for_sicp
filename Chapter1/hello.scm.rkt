@@ -1,1 +1,3 @@
-(write-line "helloworld")
+#lang sicp
+
+(display"helloworld")
