@@ -1,4 +1,5 @@
 #lang sicp
+
 (define (square x) (* x x)) 
 
 (define (improve guess x)

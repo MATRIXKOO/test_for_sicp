@@ -1,14 +1,23 @@
 #lang sicp
 
-(define (smallest_divisor n) (find_divisor n 2))
+(define (square x)
+  (* x x))
 
-(define (is_divides a b) (= (remainder b a) 0))
+(define (smallest-divisor n)
+  (find-divisor n 2))
 
-(define (find_divisor n test_divisor)
-(cond ((> (square test_divisor) n) n)
-(is_divides test_divisor n) test_divisor)
-(else (find_divisor n (+ test_divisor 1)))))
+(define (find-divisor n test-divisor)
+  (cond ((> (square test-divisor) n) n)
+        ((divides? test-divisor n) test-divisor)
+        (else (find-divisor n (+ test-divisor 1)))))
 
-(define (prime_ n)
-        (= n (smallest-divisor n)))
-(prime_ 10)
+(define (divides? a b)
+  (= (remainder b a) 0))
+
+(smallest-divisor 199)
+
+(smallest-divisor 1999)
+
+(smallest-divisor 19999)
+
+(display smallest-divisor)
